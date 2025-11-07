@@ -4,6 +4,8 @@ It is a fully functional, responsive e-commerce web application built with React
 
 # GitHub: https://github.com/akbansal765/nexora-project
 
+# LOOM Video: https://www.loom.com/share/9b328f4d5b194008b5c91300b9a7acce
+
 ---
 
 ## 📌 Project Objective
