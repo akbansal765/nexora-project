@@ -1,0 +1,129 @@
+.welcomeImage_component{
+    height: 90vh;
+
+    & > img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.box_shadow{
+    position: absolute;
+    border-bottom: solid 0.5px transparent;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.233);
+}
+.welcomeImage_content_box{
+    position: absolute;
+    padding-left: 57vw;
+    padding-top: 30vh;
+
+    & > p{
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+
+    & > a > button{
+        background-color: rgba(255, 0, 0, 0.801);
+        color: white;
+        border: none;
+        padding: 8px 25px;
+        font-weight: 600;
+        margin-top: 5%;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgba(255, 0, 0, 0.959);
+        }
+    }
+}
+
+
+/* ///////////  MEDIA QUERIES //////////// */
+@media (max-width: 1024px){
+    .welcomeImage_component{
+        height: 35vh;
+    }
+    .welcomeImage_content_box{
+    padding-top: 10vh;
+
+    & > p{
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+    }
+}
+@media (max-width: 768px){
+    .welcomeImage_component{
+        height: 35vh;
+    }
+    .welcomeImage_content_box{
+    padding-top: 10vh;
+
+    & > p{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    }
+}
+@media (max-width: 640px){
+    .welcomeImage_component{
+        height: 25vh;
+    }
+    .welcomeImage_content_box{
+    padding-top: 5vh;
+
+    & > p{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+    & > a > button{
+        padding: 4px 10px;
+        font-weight: 400;
+        font-size: 0.5rem;
+    }
+    }
+}
+@media (max-width: 475px){
+    .welcomeImage_component{
+        height: 25vh;
+    }
+    .welcomeImage_content_box{
+    padding-top: 5vh;
+
+    & > p{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+    & > a > button{
+        padding: 4px 10px;
+        font-weight: 400;
+        font-size: 0.5rem;
+    }
+    }
+}
+@media (max-width: 1024px) and (max-height: 600px){
+     .welcomeImage_component{
+        height: 75vh;
+    }
+    .welcomeImage_content_box{
+        padding-top: 20vh;
+    }
+}
+@media (max-height: 450px) and (orientation: landscape){
+    .welcomeImage_content_box{
+    padding-top: 20vh;
+
+    & > p{
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+
+    & > a > button{
+        padding: 4px 10px;
+        font-weight: 400;
+        font-size: 0.5rem;
+    }
+    }
+}

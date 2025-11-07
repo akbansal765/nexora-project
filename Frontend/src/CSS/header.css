@@ -1,0 +1,243 @@
+.header_component{
+    height: 20vh;
+}
+.headline_box{
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: rgba(255, 255, 255, 0.692);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.navbar{
+    height: 65%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo_box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    & > img{
+        height: 40%;
+    }
+}
+.nav_links{
+    display: flex;
+    align-items: center;
+
+    & li{
+        font-size: 0.92rem;
+        list-style: none;
+        margin-left: 3vw;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.863);
+    }
+
+}
+.cart_button_li{
+    height: 100%;
+}
+.cart_button_box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & > img{
+        height: 40%;
+    }
+    & > div{
+        height: 4vh;
+        width: 4vh;
+        margin-left: 1vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: white;
+        background-color: rgba(255, 9, 9, 0.849);
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    
+}
+
+/* /////////////// FOOTER //////////////// */
+.footer_component{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.781);
+    font-size: 0.8rem;
+}
+
+/* ///////////  MEDIA QUERIES //////////// */
+@media (max-width: 1024px){
+    .header_component{
+       height: 13vh;
+    }
+    .cart_button_box{     
+        & > img{
+            height: 35%;
+        }
+        & > div{
+            height: 2.5vh;
+            width: 2.5vh;
+            font-size: 0.9rem;
+        }
+    }
+    .footer_component{
+    height: 6vh;
+    }
+}
+@media (max-width: 768px){
+     .header_component{
+       height: 14vh;
+    }
+    .logo_box{
+        & > img{
+            height: 30%;
+        }
+    }
+    .cart_button_box{     
+        & > img{
+            height: 35%;
+        }
+        & > div{
+            height: 2.5vh;
+            width: 2.5vh;
+            font-size: 0.9rem;
+        }
+    }
+    .footer_component{
+    height: 6vh;
+    }
+}
+@media (max-width: 640px){
+    .header_component{
+       height: 15vh;
+    }
+    .headline_box{
+        font-size: 0.5rem;
+    }
+    .logo_box{
+        & > img{
+            height: 40%;
+        }
+    }
+    .nav_links{
+        & li{
+            font-size: 0.6rem;
+        }
+    }
+    .cart_button_box{     
+        & > img{
+            height: 30%;
+        }
+        & > div{
+            height: 2.5vh;
+            width: 2.5vh;
+            margin-left: 0.7vh;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+    }
+     .footer_component{
+        height: 6vh;
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 475px){
+    .header_component{
+       height: 15vh;
+    }
+    .headline_box{
+        font-size: 0.5rem;
+    }
+    .logo_box{
+        & > img{
+            height: 30%;
+        }
+    }
+    .nav_links{
+        & li{
+            font-size: 0.6rem;
+        }
+    }
+    .cart_button_box{     
+        & > img{
+            height: 30%;
+        }
+        & > div{
+            height: 2.5vh;
+            width: 2.5vh;
+            margin-left: 0.7vh;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+    }
+    .footer_component{
+        height: 6vh;
+        font-size: 0.5rem;
+    }
+}
+@media (max-width: 1024px) and (max-height: 600px){
+    .header_component{
+       height: 20vh;
+    }
+     .headline_box{
+        font-size: 0.6rem;
+    }
+     .cart_button_box{     
+        & > img{
+            height: 40%;
+        }
+        & > div{
+            height: 4vh;
+            width: 4vh;
+            font-size: 0.9rem;
+        }
+    }
+    .footer_component{
+        height: 10vh;
+        font-size: 0.7rem;
+    }
+}
+@media (max-height: 450px) and (orientation: landscape){
+    .headline_box{
+        font-size: 0.4rem;
+    }
+     .logo_box{
+        & > p{
+            font-size: 0.8rem;
+        }
+    }
+    .nav_links{
+        & li{
+            font-size: 0.5rem;
+        }
+    }
+     .cart_button_box{     
+        & > img{
+            height: 35%;
+        }
+        & > div{
+            height: 3.5vh;
+            width: 3.5vh;
+            font-size: 0.5rem;
+        }
+    }
+    .footer_component{
+        font-size: 0.5rem;
+    }
+}
